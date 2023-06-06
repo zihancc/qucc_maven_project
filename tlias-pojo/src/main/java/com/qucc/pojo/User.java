@@ -32,4 +32,7 @@ public class User {
                 ", email='" + email + '\'' +
                 '}';
     }
+
+    public User() {
+    }
 }
