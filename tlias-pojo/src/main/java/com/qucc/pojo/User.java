@@ -18,4 +18,17 @@ public class User {
         this.password = password;
         this.email = email;
     }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", username='" + username + '\'' +
+                ", sex=" + sex +
+                ", address='" + address + '\'' +
+                ", password='" + password + '\'' +
+                ", email='" + email + '\'' +
+                '}';
+    }
 }
