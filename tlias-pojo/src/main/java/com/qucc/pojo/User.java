@@ -8,4 +8,14 @@ public class User {
     private String address;
     private String password;
     private String email;
+
+    public User(String name, Short age, String username, Short sex, String address, String password, String email) {
+        this.name = name;
+        this.age = age;
+        this.username = username;
+        this.sex = sex;
+        this.address = address;
+        this.password = password;
+        this.email = email;
+    }
 }
