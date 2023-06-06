@@ -7,4 +7,5 @@ public class User {
     private Short sex;
     private String address;
     private String password;
+    private String email;
 }
