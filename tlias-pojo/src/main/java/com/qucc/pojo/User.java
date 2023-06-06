@@ -8,6 +8,7 @@ public class User {
     private String address;
     private String password;
     private String email;
+    private int order;
 
     public User(String name, Short age, String username, Short sex, String address, String password, String email) {
         this.name = name;
