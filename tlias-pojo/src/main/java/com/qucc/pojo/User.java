@@ -4,4 +4,5 @@ public class User {
     private String name;
     private Short age;
     private String username;
+    private Short sex;
 }
