@@ -1,0 +1,41 @@
+spring:
+  #数据库连接信息
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/tlias
+    username: root
+    password: 123456
+  #设置文件上传大小限制
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 100MB
+
+#配置mybatis
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
+
+#pageHelper分页插件
+pagehelper:
+  reasonable: true
+  page-size-zero: true
+  support-methods-arguments: true
+
+#日志配置信息
+logging:
+  file:
+    path: D:/log/springboot-log
+  level:
+    root: info
+    org.springframework.jdbc.support.JdbcTransactionManager: debug
+
+#阿里云OSS配置信息
+aliyun:
+  oss:
+    endpoint: https://oss-cn-beijing.aliyuncs.com
+    accessKeyId: LTAI5t6hHy7MVKs9EgnMAY6U
+    accessKeySecret: LdtfSyt2Xtutq0CF7nbOa2ackNZtpK
+    bucketName: qucc-web
+
