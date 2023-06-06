@@ -9,6 +9,7 @@ public class User {
     private String password;
     private String email;
     private int order;
+    private String job;
 
     public User(String name, Short age, String username, Short sex, String address, String password, String email) {
         this.name = name;
